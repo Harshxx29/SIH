@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-coop-50: #f0f9ff;
+  --color-coop-100: #e0f2fe;
+  --color-coop-500: #0ea5e9;
+  --color-coop-600: #0284c7;
+  --color-coop-700: #0369a1;
+  
+  --color-brand-50: #f2fbf5;
+  --color-brand-100: #e1f7e9;
+  --color-brand-500: #22c55e;
+  --color-brand-600: #16a34a;
+  
+  --color-accent-50: #fffbeb;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+
+  --color-gemini-bg: #131314;
+  --color-gemini-card: #1e1f20;
+  --color-gemini-hover: #282a2c;
+  --color-gemini-text: #e3e3e3;
+  --color-gemini-muted: #c4c7c5;
+  --color-gemini-border: #333537;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-gemini-bg);
+    color: var(--color-gemini-text);
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
